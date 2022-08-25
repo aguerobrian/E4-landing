@@ -1,0 +1,254 @@
+html{
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: fixed;
+}
+
+@media(max-width:800px){
+  .nav{
+    font-size: 1.5rem;
+  }
+}
+
+.nav i{
+  font-size: 6rem;
+  color: #E0841B  ;
+}
+
+.nav i:hover{
+  color:rgb(89, 187, 89) ;
+}
+
+.nav-ul {
+  
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-ul li {
+  list-style: none;
+  margin: 0px 10px;
+  font-family: "Do Hyeon", sans-serif;
+  z-index: 1;
+  color: #e0841b;
+}
+
+.nav-ul a {
+  text-decoration: none;
+}
+
+.nav-ul li:hover {
+  cursor: pointer;
+  color: rgb(89, 187, 89);
+}
+
+.logo {
+  
+  width: 10%;
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+}
+.logo:hover {
+  cursor: pointer;
+  transform: rotate(20deg) scale(1.3);
+}
+
+.portada  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  
+}
+
+.portada-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 8rem;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  -webkit-text-stroke: 1px #e0841b;
+  color: transparent;
+}
+
+@media(max-width:800px){
+  .title .sub-title {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
+
+.contenedor-circulo-logo {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.circulo-logo {
+  font-family: "Satisfy", cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 40vh;
+  height: 40vh;
+  background-color: #cf9250;
+  margin-top: 5rem;
+  border-radius: 100%;
+  font-size: 3em;
+  -webkit-box-shadow: 2px 3px 34px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 34px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 34px 2px rgba(0, 0, 0, 0.75);
+}
+
+@media(max-width:800px){
+  .circulo-logo{
+    width: 20vh;
+    height: 20vh;
+    font-size: 2rem;
+  }
+}
+
+.sub-title {
+  color: black;
+  font-size: 5rem;
+}
+
+.contenedor-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media  (max-width: 800px){
+  .contenedor-card {
+    width: 100%;
+    flex-wrap: wrap
+    
+  }
+};
+  
+
+
+
+.foto-card {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 2rem;
+}
+.card {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 70rem;
+  background-image: url(./img/pentagrama.jpg);
+  background-position: right;
+  background-size: cover;
+  margin: 1rem;
+  text-align: center;
+  justify-content: space-around;
+}
+@media(max-width:800px  ){
+  .card{
+    width: 100vh;
+  }
+}
+
+.boton button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+}
+
+.boton button:hover {
+  background-color: #ac5c08;
+  cursor: pointer;
+}
+
+.margin-subtitle {
+  font-size: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media(max-width:800px){
+  .margin-subtitle{
+    font-size: 4rem;
+  }
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content:space-around;
+  padding: 3rem;
+}
+
+.redes-sociales-footer{
+
+  display: inline-block;
+  text-align: center;
+ 
+}
+
+.contenedor-footer p{
+  margin: 5px;
+}
+
+.redes-sociales-footer i{
+  margin: 15px;
+  font-size: 25px;
+}
+
+.redes-sociales-footer i:hover{
+  color:  #ac5c08;
+   cursor: pointer; ;
+}
+
+.portada-responsive{
+  width: 100%;
+}
+
